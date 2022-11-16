@@ -1,3 +1,25 @@
+需要有cpu对应版本的 **transmission-remote
+
+0，将脚本另存为 addtkr.sh
+
+1，挂载 硬盘到 /mnt/hdd
+
+2，硬盘新建transplus文件夹，把 transmission-remote和addtkr.sh放进去，网上搜tracker，以文本存成trackers.txt(每行一个地址，不要有空白行)
+
+3，计划任务/cron，添加 * */1 * * * /mnt/hdd/transplus/addtkr.sh>/mnt/mydisk/tracker.log
+
+注：* */1 * * * 代表每分钟执行一次
+
+默认设置在addtkr.sh前几行，把里面
+
+ip改成你路由ip
+
+账号密码改成你的transmission账号密码
+
+只需要addtkr.sh，其他文件不用下
+
+修改自：（原文）
+
 # Get more trackers, get more seeders,  get more peers transmission 
 [![Docker Image CI](https://github.com/AndrewMarchukov/tracker-add/actions/workflows/docker-image.yml/badge.svg?branch=docker)](https://github.com/AndrewMarchukov/tracker-add/actions/workflows/docker-image.yml) [![](https://images.microbadger.com/badges/version/andrewmhub/transmission-tracker-add.svg)](https://microbadger.com/images/andrewmhub/transmission-tracker-add) ![Docker Pulls](https://img.shields.io/docker/pulls/andrewmhub/transmission-tracker-add.svg) ![GitHub top language](https://img.shields.io/github/languages/top/AndrewMarchukov/tracker-add.svg) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/andrewmhub/transmission-tracker-add/latest)
 
