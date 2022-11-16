@@ -18,6 +18,12 @@ ip改成你路由ip
 
 只需要addtkr.sh，其他文件不用下
 
+目录：（硬盘上/mnt/hdd）
+/transplus
+/transplus/addtkr.sh
+/transplus/trackers.txt
+/transplus/transmission-remote
+
 修改自：（原文）
 
 # Get more trackers, get more seeders,  get more peers transmission 
