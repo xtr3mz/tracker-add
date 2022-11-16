@@ -6,7 +6,7 @@
 
 2，硬盘新建transplus文件夹，把 transmission-remote和addtkr.sh放进去，网上搜tracker，以文本存成trackers.txt(每行一个地址，不要有空白行)
 
-3，计划任务/cron，添加 * */1 * * * /mnt/hdd/transplus/addtkr.sh>/mnt/mydisk/tracker.log
+3，计划任务/cron，添加 * */1 * * * /mnt/hdd/transplus/addtkr.sh>/mnt/hdd/tracker.log
 
 注：* */1 * * * 代表每分钟执行一次
 
