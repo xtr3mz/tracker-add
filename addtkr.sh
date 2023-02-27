@@ -38,8 +38,4 @@ for id in $ids ; do
 		    add_trackers "$hash" "$id"
 	    tips="done"
 done
-
-echo $tipsdone
-done
-
-echo $tipss
+echo $tips
